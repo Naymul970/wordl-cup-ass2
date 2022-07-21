@@ -1,0 +1,337 @@
+body{
+    background-color: antiquewhite;
+}
+main{
+display: flex;
+align-items: center;
+flex-direction: column;
+background-color: white;
+margin: 10px;
+padding-bottom: 100px;
+}
+/* secton1 start */
+
+.section-title{
+   padding: 20px 100px 50px 100px;
+}
+.top-banner{
+    display:flex;
+    background-color: black;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+.text-item{
+    width:50%;
+    border: 1px solid black;
+    color: white;
+    margin-left: 40px;
+    
+    
+}
+.h1-part{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Edu SA Beginner', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+}
+
+.button1{
+    font-size: larger;
+    font-weight:;
+    padding: 10px;
+    background-color:brown ;
+    color: white;
+    border-radius: 5px;
+    
+}
+@keyframes sliding {
+    from{
+        background-color:white ;
+        color:black;
+        left: 0px;
+    }
+    to{
+        background-color: black;
+        color: black;
+        left: 50px;
+    }
+}
+.fa-angles-right{
+    position: relative;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+.image-banner-part, .img{
+    width: 50%;
+    padding-left: 100px;
+    
+
+}
+/* section two start
+----------------- */
+.section-two-and-three{
+    display: flex;
+    padding: 20px 100px 50px 100px;
+}
+.section-title-two{
+    background-color: black;
+    padding: 20px 20px ;
+    border-radius: 10px;
+    height: 150px;
+    margin-right: 10px;
+    color: black;
+    margin-top: 10px;
+    
+
+}
+
+.a-tag{
+   
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-column-gap: 10px;
+   align-items: center;
+   text-align: center;
+   color: black;
+
+}
+.a-tag a{
+    text-decoration: none;
+    margin-right:15px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.upcom{
+    background-color:white;
+    padding: 10px;
+    width: 130px;
+    border: 1px solid;
+    color: black;
+}
+.all{
+    padding: 10px;
+    background-color: white;
+    width: 130px;
+    border: 1px solid;
+    margin-top: 5px;
+    color: black;
+}
+.a-blog{
+background-color: burlywood;
+padding: 10px;
+width: 130px;
+border: 1px solid;
+margin-top: 5px;
+margin-right:;
+
+}
+/* section three start
+--------------- */
+.section-three{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    width: ;
+}
+.div-detail{
+    margin-top: 10px;
+background-color:white;
+width: 250px;
+height: 350px;
+line-height: 15px;
+border: 1px solid whitesmoke;
+border-radius: 10px;
+box-shadow: 2px 2px whitesmoke;
+}
+.img-two{
+    width: 100%;
+}
+.button{
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.info-icon{
+    display: flex;
+    align-items: center;
+justify-content:;
+}
+.comment{
+    margin-left: 20px;
+}
+.button-view, .button-view1{
+    
+    text-align: center;
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+    padding: 5px;
+    border-radius:5px ;
+    
+}
+/* footer start
+---------- */
+.footer-main{
+    background-color: black;
+    color: white;
+    
+    
+}
+.header{
+    text-align: center;
+    padding-top: 50px;
+}
+.anchor-footer, .link-footer{
+    
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+}
+.anchor-space, a{
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.link-footer{
+    margin-top: 10px;
+}
+/* ------------
+media quary-------
+ */
+ /* Mobile device-
+ ------------- */
+ @media screen and (max-width:688px) {
+    .top-banner{
+        display: grid;
+        grid-template-columns:1,1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-item{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        
+    }
+    .section-three{
+        display: grid;
+        justify-content: center;
+    grid-template-columns: repeat(1, 1fr);}
+    .section-two-and-three{
+        display: flex;
+        flex-direction: column;
+        
+     }
+     .button-view, .button-view1{
+        display: none;
+     }
+     .anchor-space, a{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+     }
+        
+    
+ }
+
+ /* -----
+ tablet device
+ ------------------- */
+ @media screen and (min-width:689px) and (max-width:992px) {
+    
+.section-three{
+    display: grid;
+    justify-content: center;
+grid-template-columns: repeat(2, 1fr);
+}    
+.section-title-two{
+    background-color:;
+    height: 70px;
+    padding-bottom:2px ;
+} 
+
+.a-tag{
+    display: flex;
+    flex-direction: row;
+   ;
+ }
+ .section-two-and-three{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ }
+ /*--------
+  desktop device---
+  ----------*/
+ @media screen and (min-width:993px) and (max-width:1322px) {
+
+    .button-view, .button-view1{
+        display: none;
+     }
+ }
+ /* upcoming html start 
+ -----------------*/
+ /* section two start */
+ .upcom-flag{
+    background-color:blueviolet;
+    padding: 10px;
+    width: 130px;
+    border: 1px solid;
+    color: black;
+}
+.all-flag{
+    padding: 10px;
+    background-color: white;
+    width: 130px;
+    border: 1px solid;
+    margin-top: 5px;
+    color: black;
+}
+.a-blog-flag{
+background-color:white;
+padding: 10px;
+width: 130px;
+border: 1px solid;
+margin-top: 5px;
+margin-right:;
+color: black;
+
+}
+ .div-detail-flag{
+    margin-top: 10px;
+background-color:white;
+width: 250px;
+height: 200px;
+line-height: 15px;
+border: 1px solid whitesmoke;
+border-radius: 10px;
+box-shadow: 2px 2px whitesmoke;
+}
+ .flag-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+ }
+ .flag-img{
+    margin-right: 5px;
+ }
+ .flag-img2{
+    margin-left: 5px;
+ }
+ .text-detail-flag{
+    text-align: center;
+ }
+ .flag-p{
+    font-size: small;
+ }
